@@ -1,0 +1,40 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul a{
+    
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(./imagem/menu.png) no-repeat left bottom;
+}
+a:hover {
+    background-position: right bottom;
+    background-color: #f99200 ;
+    color: white;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#contatos #navegacao .contatos a,
+#diversos #navegacao .diversos a,
+#suporte #navegacao .suporte a{
+    background-position: right bottom;
+    background-color: #f99200 ;
+    color: white;
+
+}
+/*li{
+    border: 1px solid black;
+    padding: 10px 20px;
+    background: url(./imagem/seta.png) no-repeat left center;
+}

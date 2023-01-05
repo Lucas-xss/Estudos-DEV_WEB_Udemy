@@ -52,15 +52,54 @@ ul {
 #topo ul a:hover {
     color: #69001d;
 }
+
 body.home #navegacao a#home,
-body.home #navegacao a#brasil,
-body.home #navegacao a#internacional,
-body.home #navegacao a#economia,
-body.home #navegacao a#saude,
-body.home #navegacao a#ciencia,
-body.home #navegacao a#fotos, {
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos {
     color: #fff;
     background: #de003e;
     cursor: text;
 
+}
+
+
+/*  Configurar layout das três colunas*/
+
+#conteudo {
+    margin-top: 60px;
+    background-color: #f5f5f5;
+}
+
+#primario {
+    width: 270px;
+    float: left;
+    background: blue;
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    background: greenyellow;
+}
+
+#lateral {
+    width: 180px;
+    float: left;
+    background: orange;
+}
+
+/*Rodape*/
+
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
 }

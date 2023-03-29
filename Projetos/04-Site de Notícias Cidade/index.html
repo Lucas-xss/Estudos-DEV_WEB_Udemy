@@ -7,7 +7,7 @@
     <title>Notícias cidade - Seu site de notícia</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="home">
+<body id="tres-colunas" class="home">
     <div id="principal"> <!--início /container-->
         <div id="topo"> <!--início /topo-->
             <h1 class="logo">Notícias Cidade</h1>
@@ -24,21 +24,71 @@
 
         <!-- inicio /conteúdo-->
         <div id="conteudo"> 
-            <div id="primario">Primário</div>
-            <div id="secundario">Secundário</div>
+            <div id="primario">Primário
+                <div class="caixa">
+                    <h2>Entrevistas</h2>
+                    <div class="caixa_conteudo">
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                    </div>
+                </div>
+            </div>
+            <div id="secundario">Secundário
+                <div class="caixa">
+                    <h2>Entrevistas</h2>
+                    <div class="caixa_conteudo">
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                        Conteudo<br>
+                    </div>
+                </div>
+            </div>
             
             <!-- inicio lateral -->
             <div id="lateral">
                 <div class="caixa">
                     <h2>Entrevistas</h2>
                     <div class="caixa_conteudo">
-                        Conteudo
+
+                       <ul>
+                            <li><a href="">Lucas Xavier</a></li>
+                            <li><a href="">Victor Lopes</a></li>
+                            <li><a href="">Luiz Henrique</a></li>
+                            <li><a href="">Raniere Carvalho</a></li>
+                            <li><a href="">Felipe Soares</a></li>
+                            <li><a href="">Caio Andrade</a></li>
+                            <li><a href="">João Santos</a></li>
+                            <li><a href="">Iago Augusto</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="caixa">
+                    <h2>News</h2>
+                    <div class="caixa_conteudo">
+                        <form>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" placeholder="Digite seu E-mail">
+                            </div>
+                            <div>
+                                <input class="submit" type="submit" value="Cadastrar">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div><!--fim /lateral--> 
             
         </div> 
         <!-- fim /conteúdo-->
+        
     </div> <!-- fim /container-->
     <div id="container-rodape" style="clear: both;">
         <div id="rodape">

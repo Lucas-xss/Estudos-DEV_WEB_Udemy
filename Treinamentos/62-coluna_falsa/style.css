@@ -1,0 +1,89 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgba(23, 104, 197, 0.822);
+}
+#container {
+    min-width: 720px;
+    width: 85%; /*720px*//* Para colocar o layout liqído é nescessário colocar o wid na area total.*/
+    margin: 0 auto;
+    background: #fff url(./imagens/coluna.png) repeat-y left top;
+    
+}
+#marca {
+    width: 100%;
+    height: 300px;
+    background: #225992 url(./imagens/cabecalho2.jpg) no-repeat center;
+    text-align: center;
+    line-height: 300px;
+    color: #f4fff2;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#conteudo {
+    width: 74%;/*77,5*/
+    float: right;
+    
+}
+
+#conteudo-principal {
+    width: 53%;/*53,3 -> 320px*/
+    float: left;
+    color: #18447ea7;
+   
+}
+img.img-noticia {
+    width: 90%;
+    padding: 2%;
+    max-width: 600px;
+}
+#conteudo-principal h2 {
+   
+    color: #0168dd;
+   
+}
+#conteudo-secundario {
+    width: 40%; /*46,6 -> 280px*/
+    float: right;
+    background: #0474bf90;
+    color: #ffffffa7;
+    
+}
+#conteudo-secundario a {
+    text-decoration: none;
+}
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#conteudo-secundario h2 {
+    color: #ffffff;
+}
+#navegacao {
+    width: 23%;/*22,5*/
+    float: left;
+    padding: 20px 0;
+    background: #0474bf90;
+    /*background:  #e2e2e26b;*/
+}
+#navegacao ul {
+    list-style: none;
+}
+#navegacao li a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#rodape {
+    height: 30px;
+    line-height: 30px;
+    clear: both;
+    background: #0474bf90;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}

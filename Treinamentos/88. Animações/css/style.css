@@ -1,0 +1,28 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /*animation-name: animacao-caixa;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;*/
+    animation: animacao-caixa 8s 3s 2 alternate;
+}
+/* ****animação**** */
+@keyframes animacao-caixa {
+   fram {/*estado inicial*/
+    background: red;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+   }
+   to {/*estado final*/
+    background: blue ;
+    border-radius: 300px;
+    top: 200px;
+    left: 200px;
+   } 
+}
+

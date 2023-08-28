@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Finans</title>
     <!--link css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!--link bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--link Fontawesome-->
@@ -14,16 +14,16 @@
   <body>
     <!-- *******************area topo **************** -->
     <header><!-- inicio cabeçalho -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-warning">
-        <div class="container">
+      <nav class="navbar navbar-expand-sm bg-warning" data-bs-theme="light"><!-- inicio nav -->
+        <div class="container"><!-- inicio container -->
           <a href="#" class="navbar-brand">
             <img src="./imagens/logo.png" alt="" width="142">
           </a>
-          <button class="navbar-toggler" data-toggler="collapse" data-target="#nav-principal">
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div id="nav-principal" class="collapse navbar-collapse">
+          <div class="collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a href="" class="nav-link">Home</a>
@@ -35,34 +35,151 @@
                 <a href="" class="nav-link">Benefícios</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Preços</a>
+                <a href="" class="nav-link me-4 ">Preços</a>
               </li>
               <li class="nav-item">
-                <a href="" class="btn btn-outline-light ms-4">Entar</a>
+                <a href="" class="btn btn-outline-light">Entar</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </div><!-- fim container -->
+      </nav><!-- fim -->
     </header><!-- fim cabeçalho -->
    
     <!-- *******************area conteudo **************** -->
-    <section class="home"><!--inicio seção-->
+    <section id="home"><!--inicio seção home-->
+      <div class="container"><!-- inicio container -->
+        <div class="row"><!--inicio conatiner_grid -->
+          <div class="row">
+          <div class="col-md-6 d-flex"><!--inicio area_textos -->
+            <div class="align-self-center">
+              <h1 class="display-4">
+                Suas contas, descolplicadas
+              </h1>
+              <p>
+                Usado por mais de 1 milhão de pessoas, o Finans é uma ferramenta online que vai facilitar sua vida financeira.
+              </p>
+              <form action="" class="mt-4 mb-4">
+                <div class="input-group input-group-lg">
+                  <input type="text" placeholder="Digite seu e-mail" class="form-control">
+                  <button type="button" class="btn btn-primary">Cadastre-se</button>
+                </div>
+              </form>
+              <p>Disponível para
+                <a href="" class="btn btn-outline-light">
+                  <i class="fa-brands fa-android"></i>
+                </a>
+                <a href="" class="btn btn-outline-light">
+                  <i class="fa-brands fa-apple"></i>
+                </a>
+                
+              </p>
+            </div>
+          </div><!--fim area_textos -->
+          
+          <div class="col-md-6 d-none d-md-block"><!--inicio area_imagem -->
+            <img src="./imagens/capa-mulher.png" alt="">
+          </div><!--fim area_imagem -->
+  
+        </div><!-- fim container_grid -->
+      </div><!-- fim container -->
+    </section><!--fim seção home-->
+
+    <section class="caixa">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Saiba para onde vai o sei dinheiro</h2>
+              <p>
+                Com o Finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe de onde vem e para onde vaio seu dinheiro.
+              </p>
+              <a href="" class="btn btn-primary">Veja mais</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="./imagens/saiba.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="caixa">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            Texto
+            <img src="./imagens/juros.png" alt="" class="img-fluid">
           </div>
-          
-          <div class="col-md-6">
-            imagem
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Pare de pagar juros e economize</h2>
+              <p>
+                Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas a pagar e a receber!
+              </p>
+              <a href="" class="btn btn-primary">Veja mais</a>
+            </div>
           </div>
-  
         </div>
       </div>
-    </section><!--fim seção-->
-    <!-- *******************area rodape **************** -->
+    </section>
 
+    <section class="caixa">
+      <div class="container">
+        <div class="row">
+         <div class="col-md-4">
+          <img src="./imagens/facil.png" alt="" class="img-fluid">
+          <h4>Fácil de usar</h4>
+          <p>
+            O Finans vai além do básico e permite que você faça controles incríveis, essenciais para suas finanças. Simples como deve ser. 
+          </p>
+         </div>
+         <div class="col-md-4">
+          <img src="./imagens/economize.png" alt="" class="img-fluid">
+          <h4>Economize seu tempo</h4>
+          <p>
+            Tempo é dinheiro! Em segundos, você tem tudo sobre controle e aproveite seu tempo com o que realmente impora pra voê! 
+          </p>
+         </div>
+         <div class="col-md-4">
+          <img src="./imagens/suporte.png" alt=""class="img-fluid">
+          <h4>Suporte amigo</h4>
+          <p>
+            Dúvidas? Perguntas? Nosso suporte super legal ajuda você! Agente tá aqui pra resolver seus problemas e deixar sua vida bem mais fácil!
+          </p>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- *******************area rodape **************** -->
+    
+    <footer class="mt-4 mb-4 ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-8 "> 
+            <p>
+              <a class="text-decoration-none" href="">Home</a>
+              <a class="text-decoration-none" href="">Recursos</a>
+              <a class="text-decoration-none" href="">Benefícios</a>
+              <a class="text-decoration-none" href="">Preços</a>
+            </p>
+          </div>
+          <div class="col-md-4 d-flex justify-content-end">
+              <a href="" class="btn btn-outline-dark ms-2">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="" class="btn btn-outline-dark ms-2">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="" class="btn btn-outline-dark ms-2">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="" class="btn btn-outline-dark ms-2">
+                <i class="fa-brands fa-youtube"></i>
+              </a> 
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- link Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

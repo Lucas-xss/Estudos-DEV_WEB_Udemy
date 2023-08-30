@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Música para todos - Spotify</title>
-    
+    <link rel="icon" href="./imagens/favicon.png">
     <!--link css-->
     <link rel="stylesheet" href="./css/style.css">
     <!--link bootstrap css-->
@@ -18,8 +18,40 @@
     <![endif]-->
   </head>
   <body>
+    <header><!--inicio area cabecalho-->
+      <nav class="navbar  navbar-expand-md fixed-top bg-success" data-bs-theme="light">
+        <div class="container"><!--inicio container-->
+          <a href="index.html" class="navbar-brand">
+            <img src="./imagens/spotify.svg" width="142" alt="">
+          </a>
+
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-principal">
+            <i class="fa-solid fa-bars text-white"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="nav-principal">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="">Premium</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Ajuda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Baixar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Inscrever-se</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Entrar</a>
+              </li>
+            </ul>
+          </div>
+        </div><!--fim container-->
+      </nav>
+    </header><!-- fimarea cabecalho-->
     
-    <h1>Olá, mundo!</h1>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

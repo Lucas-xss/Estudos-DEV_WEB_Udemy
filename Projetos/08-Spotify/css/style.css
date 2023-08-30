@@ -1,2 +1,12 @@
+body{
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg,#011602,#09ff00);/*#ff4169, #fc26f8*/
+}
 
+/*barra navegacao
+------------------------------- */
 
+nav.navbar-transparente {
+    background: rgba(0,0,0,0.6);
+}

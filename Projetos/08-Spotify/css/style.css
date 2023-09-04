@@ -36,6 +36,10 @@ a.nav-link:hover {
 .capa {
     text-align: center;
 }
+a.carousel-control-next, a.carousel-control-prev{
+    text-decoration: none;
+    width: 5%;
+}
 /*ESTRUTURA CONTEUDOS
 -------------------------*/
 .caixa {

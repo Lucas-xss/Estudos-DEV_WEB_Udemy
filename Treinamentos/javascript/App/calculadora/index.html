@@ -104,7 +104,8 @@
             document.getElementById('resultado').value += valor
           }
           if(valor === '='){
-            var valorResultado = document.getElementById('resultado').value
+            var valorResultado = eval (document.getElementById('resultado').value)//pesquisar sobre o (eval)
+            document.getElementById('resultado').value = valorResultado
           }
 
         }else if( tipo === 'valor'){

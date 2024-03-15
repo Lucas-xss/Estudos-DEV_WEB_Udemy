@@ -1,60 +1,30 @@
-var objetos = ['Cadeira', 'Impressora', 'Garfo']
 
-/*  FORMO QUE EU FIZ ESTÁ CORRETA TBM, MAS AMBAS AS FORMULAS PRECISA DE VALIDAÇÃO DE DADOS POIS NÃO ESTÁ ORDENANDO DE FORMA CORRETA
+document.write(" 1) Baseado no exemplo da aula Praticando um pouco - Percorrendo e listando itens deArrays, implemente a mesma solução, porém utilizando o comando for." + "<br><br>")
 
 
-function Add (){
-    // Recupera o valor do campo de texto
-    var campoAdd = document.getElementById('campoEntrada').value.trim()
-    // Limpa o valor do campo de texto
-     document.getElementById('campoEntrada').value = '';
-    
-    
-    
-     // Verifica se o valor está vazio
-    if ( campoAdd === ''){
-        alert ('Informe um valor válido!')
-    }else{
-        // Adiciona o valor ao array
-        if(objetos.includes(campoAdd)){
-            alert('Objeto já foi adicionado')
-        }else{
-            // Adiciona o valor ao array
-            objetos.push(campoAdd);
-            console.log('Array de objetos:', objetos); 
-        }
-    }
+var lista_frutas = Array(); 
+lista_frutas[0] = 'Banana'; 
+lista_frutas[1] = 'Maçã'; 
+lista_frutas[2] = 'Morango'; 
+lista_frutas[3] = 'Uva'; 
+
+for (var i = 0; i < lista_frutas.length; i++) { 
+document.write(lista_frutas[i]); 
+console.log(lista_frutas[i]) 
+} 
+document.write("<hr>")
+document.write("2) Baseado no exemplo da aula Praticando um pouco  Criando uma tabuada de 1 a 10 laços encadeados, implemente a mesma solução, porém utilizando o comando while." + "<br><br>")
+
+var x = 1; 
+var y = 1; 
+while (x <= 10) { 
+y = 1; 
+while (y <= 10) { 
+console.log(x + ' x ' + y + ' = ' + x * y ); 
+document.write(x + ' x ' + y + ' = ' + x * y + "<br>"); 
+y++; 
+} 
+console.log("\n"); 
+document.write("<hr/>"); 
+x++; 
 }
-
-function Ordenar (){
-
- console.log(objetos.sort())
-
-
-}*/
-function adicionarObjetos() {
-    //recupera o valor inserido no campo id objeto
-    var objeto = document.getElementById('objeto').value
-    
-    //caso possua algum valor preenchido entra no if
-    if(objeto != '') {
-    //verifica se o valor já não foi inserido anteriormente
-    //se sim, informa que valor já existe, se não insere novo valor
-    if( objetos.indexOf(objeto) !== -1) {
-    alert('Objeto já foi adicionado')
-    } else {
-    objetos.push(objeto)
-    console.log(objetos)
-    
-    document.getElementById('objeto').value = ''
-    }
-    
-    } else {
-    alert('Informe um objeto válido')
-    
-    }
-    }
-    function ordenarObjetos() {
-    objetos.sort()
-    console.log(objetos)
-    }
